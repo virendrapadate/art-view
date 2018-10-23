@@ -1,0 +1,43 @@
+{
+  "name": "art-view",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build",
+    "build": "webpack --mode=development  && copy src\\index.html dist\\index.html && webpack-dev-server --content-base src/ --inline --hot",
+    "build-prod": "webpack --mode=production  && copy src\\index.html dist\\index.html"
+  },
+  "keywords": [
+    "reactjs"
+  ],
+  "author": "Virendra Padate",
+  "license": "MIT",
+  "dependencies": {
+    "@material-ui/core": "^3.2.2",
+    "@material-ui/icons": "^3.0.1",
+    "bootstrap": "^4.1.3",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-images": "^0.5.19"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-stage-2": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "copy-webpack-plugin": "^4.5.4",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "mini-css-extract-plugin": "^0.4.4",
+    "node-sass": "^4.9.4",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.21.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  }
+}
